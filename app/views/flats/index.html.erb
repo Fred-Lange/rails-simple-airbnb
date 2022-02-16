@@ -1,0 +1,9 @@
+<div class="container" class="flexArea" style="display: flex; flex-direction: column; justify-content: space-between; height:500px;width:800px">
+<h1>Index of all flats</h1>
+<ul>
+  <% @flats.each do |flat| %>
+    <li><%= flat.name %> - <%= flat.description %>
+</li>
+  <% end %>
+</ul>
+</div>
